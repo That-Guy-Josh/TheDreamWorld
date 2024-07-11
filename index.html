@@ -4,8 +4,6 @@
 
 
 
-
-
 <center>
 <head>
     <title>The Dream World</title>
@@ -18,7 +16,84 @@
     <h1 style="color: red; font-style: oblique;">The Dream World</h1>
 </a>
 
+
+
+
+
+
 <hr>
+
+
+
+
+
+<style>
+  .display
+  {
+    color: rgb(255, 0, 0);
+    height: 20px;
+    font-size:x-large ;
+  }
+</style>
+
+
+  <div class="display">
+  <div id="time">12:00:00 PM</div>
+  <span></span>
+  <span></span>
+  </div>
+  </div>
+  
+  <script>
+    setInterval(()=>{
+      const time = document.querySelector(".display #time");
+      let date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+      let day_night = "AM";
+      if(hours > 12){
+        day_night = "PM";
+        hours = hours - 12;
+      }
+      if(seconds < 10){
+        seconds = "0" + seconds;
+      }
+      if(minutes < 10){
+        minutes = "0" + minutes;
+      }
+      if(hours < 10){
+        hours = "0" + hours;
+      }
+      time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+    })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -55,7 +130,7 @@ box-shadow: 5px 5px 5px rgb(134, 96, 0);
 
 <br>
 <h3 style="color: gold;">What Is Lucid Dreaming?</h3>
-<h4 style="color: azure;">Learn Basic Terms And Techniques To Better Your Understanding Of Lucid Dreaming.</h4>
+<h4 style="color: azure;">Learn basic terms and techniques to better your understanding of lucid dreaming.</h4>
 
 <a href="1.html">
 <button class="abc">OPEN</button>
@@ -68,7 +143,7 @@ box-shadow: 5px 5px 5px rgb(134, 96, 0);
 <br>
 <br>
 <h3 style="color: gold;">How Do I Start Lucid Dreaming?</h3>
-<h4 style="color: azure;">First You Need To Remember The Dreams You Have By Working On Dream Recall.</h4>
+<h4 style="color: azure;">First you need to remember the dreams you have by working on dream recall.</h4>
 
 <a href="2.html">
 <button class="abc">OPEN</button>
@@ -82,19 +157,16 @@ box-shadow: 5px 5px 5px rgb(134, 96, 0);
 <br>
 <br>
 <h3 style="color: gold;">Where To Start After Recall? </h3>
-<h4 style="color: azure;">Learn What TechniquesYou Can Use, After You Get Recall Down.</h4>
+<h4 style="color: azure;">Learn what techniques you can use, after you get recall down.</h4>
 
 <a href="3.html">
 <button class="abc">OPEN</button>
 </a>
 
 
-
-
-
 <center>
 
-<br>
+
 <br>
 <h3 style="color: gold;">Mild (mnemonic induction of lucid dreams) </h3>
 <h4 style="color: azure;">Mild, is a common technique for beginners, learn what it is and how to use it.</h4>
@@ -111,10 +183,10 @@ box-shadow: 5px 5px 5px rgb(134, 96, 0);
 
 <center>
 
-  <br>
+  
   <br>
   <h3 style="color: gold;"> Wild Guide (wake-initiated lucid dream) </h3>
-  <h4 style="color: azure;">Wild, Can Be A Little Harder For beginners, But It Is Very Affective, learn what it is and how to use it.</h4>
+  <h4 style="color: azure;">Wild, can be a little harder for beginners, but it is very effective, learn what it is and how to use it.</h4>
   
   <a href="5.html">
   <button class="abc">OPEN</button>
@@ -122,19 +194,6 @@ box-shadow: 5px 5px 5px rgb(134, 96, 0);
   
   
   </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -185,20 +244,18 @@ box-shadow: 5px 5px 5px rgb(134, 96, 0);
 
 
 
+<style>
+  .abc3 {
+    color: aqua;
+  }
+  
+</style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3 class="abc3">
+  <a href="sos.html" style="text-decoration: none;">
+V1.6  By  ThatGuyJosh
+</a>
+</h3>
 
 
 
@@ -236,10 +293,6 @@ box-shadow: 5px 5px 5px rgb(134, 96, 0);
 
 
 
-
-
-
 </center>
 </body>
-
 </html>
